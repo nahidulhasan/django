@@ -1,0 +1,21 @@
+{% extends 'master.html' %}
+
+{% block title%} Hello World! {%endblock%}
+
+{%block body%} 
+
+</br></br>
+<div class="container">
+	<div class="col-mod-offset-1 col-mod-5">
+		<h3>{{last_video.title}}</h3>
+
+        <div>
+        	{{last_video.embed_code|safe}}
+        </div> 
+
+	</div>
+</div>
+
+
+
+{% endblock%}
